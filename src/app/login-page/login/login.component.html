@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="login-grid">
+        <div class="head align-vertical">
+            <h1>Hello,</h1>
+            <h1 id="blue">{{name}}!</h1>
+        </div>
+        <div class="email center-align">
+            <input type="text" placeholder="Email" class="input">
+        </div>
+        <div class="pass center-align">
+            <input type="password" placeholder="Password" class="input">
+        </div>
+        <div class="links">
+            <div id="unknown">
+                <div class="btn silent">I'm not {{name}}</div>
+            </div>
+            <div id="forgot" (click)="toggleSubComponents()">
+                <div class="btn silent">Forgot password?</div>
+            </div>
+            <div id="login">
+                <div class="btn">Login</div>
+            </div>
+        </div>
+    </div>
+</div>

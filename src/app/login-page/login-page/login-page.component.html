@@ -1,0 +1,8 @@
+<div class="inner-container">
+    <div class="login" *ngIf="showLogin === 0">
+        <app-login (eventSwtichComponent)="swtich($event)"></app-login>
+    </div>
+    <div class="forgot" *ngIf="showLogin === 1">
+        <app-forgot-password (eventSwtichComponent)="swtich($event)"></app-forgot-password>
+    </div>
+</div>
