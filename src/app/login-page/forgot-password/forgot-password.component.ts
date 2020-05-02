@@ -10,11 +10,19 @@ import { LoginService } from '../login.service';
 export class ForgotPasswordComponent implements OnInit {
 
   @Output() eventSwtichComponent: EventEmitter<Pages> = new EventEmitter<Pages>();
+  public active = 0;
 
   constructor(private loginService: LoginService) {
   }
 
   ngOnInit() {
+  }
+
+  switchTabs() {
+    if (this.active === 0)
+      this.active = 1;
+    else
+      this.active = 0;
   }
 
   toggleSubComponents() {
