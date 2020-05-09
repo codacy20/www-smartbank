@@ -5,7 +5,7 @@
             <h1 id="blue">{{name}}!</h1>
         </div>
         <div class="email center-align">
-            <input type="text" placeholder="Email" class="input">
+            <input type="email" placeholder="Email" class="input">
         </div>
         <div class="pass center-align">
             <input type="password" placeholder="Password" class="input">
@@ -18,7 +18,7 @@
                 <div class="btn silent pointer">Forgot password?</div>
             </div>
             <div id="login">
-                <div class="btn pointer">Login</div>
+                <div class="btn pointer" (click)="login()">Login</div>
             </div>
         </div>
     </div>

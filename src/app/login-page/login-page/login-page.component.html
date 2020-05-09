@@ -1,8 +1,32 @@
-<div class="inner-container">
-    <div class="login" *ngIf="showLogin === 0">
-        <app-login (eventSwtichComponent)="swtich($event)"></app-login>
+<div class="container">
+    <div class="section1">
+        <div class="logo">
+            <p>S.</p>
+        </div>
+        <div class="links">
+            <p>Terms & Conditions</p>
+            <p>Privacy policy</p>
+            <p>Help</p>
+        </div>
     </div>
-    <div class="forgot" *ngIf="showLogin === 1">
-        <app-forgot-password (eventSwtichComponent)="swtich($event)"></app-forgot-password>
+    <div class="section2">
+        <div class="inner-container">
+            <div class="inner-container">
+                <div class="login" *ngIf="showLogin === 0">
+                    <app-login (eventSwtichComponent)="swtich($event)"></app-login>
+                </div>
+                <div class="forgot" *ngIf="showLogin === 1">
+                    <app-forgot-password (eventSwtichComponent)="swtich($event)"></app-forgot-password>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="disclaimer">
+            <p>
+                Do not disclose your login, password and verification code to prevent fraudsters from using it.
+                A bank employee will never ask them.
+            </p>
+        </div>
     </div>
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { LoginService } from '../login.service';
 import { Pages } from '../../model/pages.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
   public name = 'Amir';
   @Output() eventSwtichComponent: EventEmitter<Pages> = new EventEmitter<Pages>();
 
-  constructor(private loginService: LoginService) {
+  constructor(private loginService: LoginService, private router: Router) {
   }
 
   ngOnInit() {
@@ -20,5 +21,9 @@ export class LoginComponent implements OnInit {
 
   toggleSubComponents() {
     this.eventSwtichComponent.emit(Pages.ForgotPassword);
+  }
+
+  login() {
+    this.router.navigate(['/dashboard']);
   }
 }
