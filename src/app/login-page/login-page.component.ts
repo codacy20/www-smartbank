@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, OnChanges } from '@angular/core';
 import { Pages } from 'src/app/model/pages.model';
-import { LoginService } from '../login.service';
+import { LoginService } from './login.service';
 
 @Component({
   selector: 'app-login-page',

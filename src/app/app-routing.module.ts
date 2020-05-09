@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginPageComponent } from './login-page/login-page/login-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PaymentsComponent } from './payments/payments.component';
 import { OffersComponent } from './offers/offers.component';
