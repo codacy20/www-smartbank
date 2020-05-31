@@ -1,31 +1,43 @@
 <div class="container">
     <div class="row2 item">
         <div id="logo">
-            <p>S.</p>
+            <p (click)="navigate(0)">S.</p>
         </div>
     </div>
     <div class="row3 item">
-        <div class="item-inner">
-            <div class="icon" id="chart"></div>
+        <div class="item-inner" (click)="navigate(0)">
+            <span class="material-icons" [ngClass]="{'active': current === 'dashboard'}">
+                bar_chart
+            </span>
         </div>
-        <div class="item-inner">
-            <div class="icon" id="payments"></div>
+        <div class="item-inner" (click)="navigate(1)">
+            <span class="material-icons" [ngClass]="{'active': current === 'payments'}">
+                monetization_on
+            </span>
         </div>
-        <div class="item-inner">
-            <div class="icon" id="offers"></div>
+        <div class="item-inner" (click)="navigate(2)">
+            <span class="material-icons" [ngClass]="{'active': current === 'offers'}">
+                notifications_none
+            </span>
         </div>
-        <div class="item-inner">
-            <div class="icon" id="chat"></div>
+        <div class="item-inner" (click)="navigate(3)">
+            <span class="material-icons" [ngClass]="{'active': current === 'chat'}">
+                textsms
+            </span>
         </div>
-        <div class="item-inner">
-            <div class="icon" id="map"></div>
+        <div class="item-inner" (click)="navigate(4)">
+            <span class="material-icons" [ngClass]="{'active': current === 'map'}">
+                location_on
+            </span>
         </div>
-        <div class="item-inner">
-            <div class="icon" id="tune"></div>
+        <div class="item-inner" (click)="navigate(5)">
+            <span class="material-icons" [ngClass]="{'active': current === 'setting'}">
+                tune
+            </span>
         </div>
     </div>
     <div class="row5 item">
-        <div class="item-inner">
+        <div class="item-inner" (click)="navigate(6)">
             <div class="icon" id="logout"></div>
         </div>
     </div>
