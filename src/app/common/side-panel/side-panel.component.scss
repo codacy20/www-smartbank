@@ -10,13 +10,12 @@
     border-radius: 15px;
 }
 .large {
-    height: 50vh;
     .profile {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        height: 15vh;
+        height: 200px;
         .inner-profile {
             display: flex;
             justify-content: center;
@@ -47,9 +46,12 @@
         padding: 3vh;
         height: 35vh;
         box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
         .income-spending {
             width: 100%;
-            height: 3vh;
+            padding: 2vh 0;
             .common {
                 box-sizing: border-box;
                 display: inline-flex;
@@ -60,6 +62,7 @@
                 height: 100%;
             }
             .material-icons {
+                margin-left: 0.5vw;
                 font-size: 15px;
             }
             .gray {
@@ -68,6 +71,47 @@
             .spending {
                 border-left: 1px solid rgba(128, 128, 128, 0.5);
             }
+        }
+        .accounts {
+            // background-color: red;
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            border-radius: 15px;
+            padding: 2vh 0;
+            .icon {
+                display: inherit;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                font-size: 30px;
+            }
+            .info {
+                display: inherit;
+                flex-direction: column;
+                justify-content: center;
+                width: 50%;
+                .title {
+                    color: gray;
+                    font-size: 14px;
+                    margin-bottom: 0.3vh;
+                }
+                .price {
+                    margin-top: 0.25vh;
+                    font-weight: bold;
+                }
+            }
+            .option {
+                display: inherit;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+            }
+        }
+        .accounts:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            transition: 0.3s;
         }
     }
 }
