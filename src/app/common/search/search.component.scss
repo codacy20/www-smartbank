@@ -1,0 +1,22 @@
+.input {
+    padding-left: 5%;
+    width: 95%;
+    border-radius: 30px;
+    font-size: 21px;
+    border-style: unset;
+    height: 100%;
+    box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.05);
+    transition: all 0.5s;
+    // height: 40%;
+    background-image: url('../../../assets/search-24px.svg');
+    background-repeat: no-repeat;
+    background-position: center right 5%;
+}
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 50%;
+    height: 100%;
+}

@@ -9,6 +9,49 @@
     box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.05);
     border-radius: 15px;
 }
+
+.accounts {
+    // background-color: red;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 2vh 0;
+    .icon {
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        font-size: 30px;
+    }
+    .info {
+        display: inherit;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        .title {
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 0.3vh;
+        }
+        .price {
+            margin-top: 0.25vh;
+            font-weight: bold;
+        }
+    }
+    .option {
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+}
+.accounts:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
 .large {
     .profile {
         display: flex;
@@ -44,7 +87,7 @@
     }
     .inner-container {
         padding: 3vh;
-        height: 35vh;
+        height: 400px;
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
@@ -72,50 +115,31 @@
                 border-left: 1px solid rgba(128, 128, 128, 0.5);
             }
         }
-        .accounts {
-            // background-color: red;
-            display: flex;
-            flex-direction: row;
-            box-sizing: border-box;
-            border-radius: 15px;
-            padding: 2vh 0;
-            .icon {
-                display: inherit;
-                justify-content: center;
-                align-items: center;
-                width: 30%;
-                font-size: 30px;
-            }
-            .info {
-                display: inherit;
-                flex-direction: column;
-                justify-content: center;
-                width: 50%;
-                .title {
-                    color: gray;
-                    font-size: 14px;
-                    margin-bottom: 0.3vh;
-                }
-                .price {
-                    margin-top: 0.25vh;
-                    font-weight: bold;
-                }
-            }
-            .option {
-                display: inherit;
-                justify-content: center;
-                align-items: center;
-                width: 20%;
-            }
-        }
-        .accounts:hover {
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            transition: 0.3s;
-        }
     }
 }
 .small {
     margin-top: 4vh;
-    height: 30vh;
+    height: 10vh;
+    .inner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3vh;
+        box-sizing: border-box;
+        height: 100%;
+        .accounts {
+            width: 100%;
+            .info {
+                width: unset;
+                .title {
+                    color: black;
+                }
+                .price {
+                    color: gray;
+                    margin-top: 0.25vh;
+                    font-weight: unset;
+                }
+            }
+        }
+    }
 }
