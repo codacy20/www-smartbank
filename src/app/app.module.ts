@@ -15,6 +15,7 @@ import { NavigationComponent } from './common/navigation/navigation.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SidePanelComponent } from './common/side-panel/side-panel.component';
 import { SearchComponent } from './common/search/search.component';
+import { ExpenseOverviewComponent } from './dashboard/expense-overview/expense-overview.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SearchComponent } from './common/search/search.component';
     NavigationComponent,
     SettingsComponent,
     SidePanelComponent,
-    SearchComponent
+    SearchComponent,
+    ExpenseOverviewComponent
   ],
   imports: [
     BrowserModule,

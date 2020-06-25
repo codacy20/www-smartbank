@@ -1,0 +1,36 @@
+.container1 {
+    display: flex;
+    padding: 2vh;
+    height: 4vh;
+    align-items: center;
+    .tabs {
+        font-weight: bold;
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 2vw;
+        p {
+            cursor: pointer;
+            height: 90%;
+            opacity: 0.7;
+            transition: 0.4s ease;
+        }
+        #divide {
+            opacity: 0;
+            transition: 0.4s ease;
+            height: 10%;
+            background: #9568ff;
+            width: 0%;
+        }
+        &.active {
+            p {
+                opacity: 1;
+            }
+            #divide {
+                opacity: 1;
+                width: 70%;
+            }
+        }
+    }
+}
