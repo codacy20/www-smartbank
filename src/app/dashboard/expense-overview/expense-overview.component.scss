@@ -1,8 +1,15 @@
 .container1 {
     display: flex;
     padding: 2vh;
-    height: 4vh;
+    height: 60px;
     align-items: center;
+    justify-content: space-between;
+    .tab-container {
+        width: 20vw;
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
     .tabs {
         font-weight: bold;
         display: flex;
@@ -19,7 +26,7 @@
         #divide {
             opacity: 0;
             transition: 0.4s ease;
-            height: 10%;
+            height: 15%;
             background: #9568ff;
             width: 0%;
         }
@@ -32,5 +39,46 @@
                 width: 70%;
             }
         }
+    }
+    .tabs:hover {
+        p {
+            opacity: 1;
+        }
+    }
+    .save {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        background-color: #01a3ff;
+        border-radius: 15px;
+        height: 50px;
+        transition: all 0.5s;
+        cursor: pointer;
+        span {
+            cursor: pointer;
+            color: white;
+        }
+    }
+}
+
+.container2 {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.05);
+
+    .row1 {
+        width: 33.33%;
+        height: 100%;
+    }
+    .row2 {
+        width: 66.66%;
+        height: 100%;
     }
 }

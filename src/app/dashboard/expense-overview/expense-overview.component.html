@@ -1,13 +1,28 @@
 <div class="container1">
-    <div class="tabs pointer" [ngClass]="{'active': active==0}" id="tab1" (click)="switchTabs(0)">
-        <p>Expenses</p>
-        <div id="divide"></div>
+    <div class="tab-container">
+        <div class="tabs pointer" [ngClass]="{'active': active==0}" id="tab1" (click)="switchTabs(0)">
+            <p>Expenses</p>
+            <div id="divide"></div>
+        </div>
+        <div class="tabs pointer" [ngClass]="{'active': active==1}" id="tab2" (click)="switchTabs(1)">
+            <p>Receipts</p>
+            <div id="divide"></div>
+        </div>
     </div>
-    <div class="tabs pointer" [ngClass]="{'active': active==1}" id="tab2" (click)="switchTabs(1)">
-        <p>Receipts</p>
-        <div id="divide"></div>
+    <div class="save">
+        <span class="material-icons">
+            vertical_align_bottom
+        </span>
+        <span>
+            Save Report
+        </span>
     </div>
 </div>
 <div class="container2">
+    <div class="row1 col1">
+        <app-chart></app-chart>
+    </div>
+    <div class="row2 col2">
 
+    </div>
 </div>
