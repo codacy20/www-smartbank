@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartType } from 'chart.js';
-import { MultiDataSet, Label } from 'ng2-charts';
+import { SingleDataSet, Label, Colors } from 'ng2-charts';
 import { ChartOptions, ChartAnimationOptions } from 'chart.js';
 
 @Component({
@@ -12,9 +12,16 @@ export class ChartComponent implements OnInit {
 
   public doughnutChartType: ChartType = 'doughnut';
   public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartData: MultiDataSet = [
-    [350, 450, 100]
-  ];
+  public doughnutChartData: SingleDataSet = [350, 450, 100];
+  public backgroundColor: Colors[] = [{
+    backgroundColor: [
+      '#01a3ff',
+      '#33b5ff',
+      '#66c7ff',
+      '#99daff',
+      '#ccecff',
+      '#ffffff']
+  }];
   public options: ChartOptions = {
     maintainAspectRatio: false,
     responsive: true,
@@ -31,11 +38,9 @@ export class ChartComponent implements OnInit {
     console.log(event, active);
   }
 
-  public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
-    console.log(event, active);
-  }
+  // public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
+  //   console.log(event, active);
+  // }
   ngOnInit(): void {
   }
-
-
 }
