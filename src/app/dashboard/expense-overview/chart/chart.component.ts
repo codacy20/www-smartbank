@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartType } from 'chart.js';
 import { MultiDataSet, Label } from 'ng2-charts';
+import { ChartOptions, ChartAnimationOptions } from 'chart.js';
 
 @Component({
   selector: 'app-chart',
@@ -14,12 +15,16 @@ export class ChartComponent implements OnInit {
   public doughnutChartData: MultiDataSet = [
     [350, 450, 100]
   ];
-  public options: any = {
-    legend: { position: 'left' }
+  public options: ChartOptions = {
+    maintainAspectRatio: false,
+    responsive: true,
+    animation: {
+      duration: 2000
+    },
+    onClick: (event, active) => { this.chartClicked({ event, active }); }
   };
 
   constructor() {
-    // Object.assign(this, { this.single });
   }
 
   public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
