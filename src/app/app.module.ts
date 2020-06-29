@@ -17,6 +17,7 @@ import { SidePanelComponent } from './common/side-panel/side-panel.component';
 import { SearchComponent } from './common/search/search.component';
 import { ExpenseOverviewComponent } from './dashboard/expense-overview/expense-overview.component';
 import { ChartComponent } from './dashboard/expense-overview/chart/chart.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ChartComponent } from './dashboard/expense-overview/chart/chart.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
