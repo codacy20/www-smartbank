@@ -1,8 +1,14 @@
 <div class="container">
+  <span class="material-icons">
+    keyboard_arrow_left
+  </span>
   <div class="chart-container">
     <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [legend]="false"
       [chartType]="doughnutChartType" [options]="options" [colors]="backgroundColor">
     </canvas>
+    <span>$ 96,000</span>
   </div>
-  <span>$ 96,000</span>
+  <span class="material-icons">
+    keyboard_arrow_right
+  </span>
 </div>
